@@ -1,5 +1,5 @@
-import mobile from '../assets/iphone-14.jpeg'
-import laptop from '../assets/Apple-MacBook-Pro-M2.jpg.jpg'
+import mobile from '../assets/iphone-14.jpg'
+import laptop from '../assets/Apple-MacBook-Pro-M2.jpg'
 export const  PRODUCTS = [
     {
         id: 1,

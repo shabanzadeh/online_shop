@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom'
+import {} from '@fortawesome/react-fontawesom'
 const Nav =()=>{
     return(
        <div className="navbar navbar-dark bg-dark navbar-expand-lg">

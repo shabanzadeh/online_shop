@@ -7,10 +7,8 @@ const Shop =()=>{
         <React.Fragment>
         <h1>Shop</h1>
         <div className="row">
-            {PRODUCTS.map((productData)=>{
-
-                return <Product data={productData}/>
-            })}
+            {PRODUCTS.map((productData)=><Product key={productData.id}data={productData}/>
+            )}
         </div>
 
         </React.Fragment>

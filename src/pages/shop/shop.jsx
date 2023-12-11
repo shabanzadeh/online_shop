@@ -8,7 +8,8 @@ const Shop =()=>{
         <h1>Shop</h1>
         <div className="row">
             {PRODUCTS.map((productData)=>{
-               return <Product data={productData}/>
+
+                return <Product data={productData}/>
             })}
         </div>
 

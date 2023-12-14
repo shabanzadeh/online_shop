@@ -5,10 +5,11 @@ import './App.css';
 import Nav from './components/nav';
 import Cart from './pages/cart/cart';
 import Shop from './pages/shop/shop';
+import {ShopContextProvider} from "./context/shopContext"
 function App() {
   return (
     <div className="App">
-      <useShopContextProvider>
+      <ShopContextProvider>
       <Router>
         <Nav />
         <Routes>
@@ -16,7 +17,7 @@ function App() {
           <Route path="/cart" element={<Cart />}/>
         </Routes> 
       </Router>
-      </useShopContextProvider>
+      </ShopContextProvider>  
     </div>
   );
 }

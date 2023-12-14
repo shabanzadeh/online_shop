@@ -4,7 +4,7 @@ import { ShopContext } from "../../context/shopContext";
 
 const Product =(props)=>{
     const {id, productName, productImage, price} = props.data;
-    const {cartItems, addTocart, removeFromCart} = useContext(ShopContext)
+    const {cartItems, addToCart, removeFromCart} = useContext(ShopContext)
 
     
     return(
@@ -12,11 +12,11 @@ const Product =(props)=>{
             <img src={productImage} className="w-100"/>
         <h5>{productName}</h5>
         <p>price: {price}$</p>
-        <button className="btn btn-info btn-sm">+</button>
+        <button className="btn btn-info btn-sm" onClick={()=> addToCart(id)}>+</button>
         <span className="mx-1">
             {cartItems?.filter((row) => row.id === id)[0]?.count}
         </span>
-        <button className="btn btn-info btn-sm">-</button>
+        <button className="btn btn-info btn-sm" onClick={()=> removeFromCart(id)}>-</button>
         </div>
     )
 }

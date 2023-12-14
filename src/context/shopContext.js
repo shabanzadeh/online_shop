@@ -1,14 +1,13 @@
-const { createContext, useState } = require("react");
+import { createContext, useState } from "react"
 
-export const ShopContext = createContext(0);
+export const ShopContext = createContext(null);
 
-export const useShopContextProvider = (props)=>{
+export const ShopContextProvider = (props)=>{
     
     const [cartItems , setCartItems] = useState([])
 
     const addToCart = (itemId)=>{
         setCartItems([...cartItems, {id : itemId, count:1}])
-
     }
     const removeFromCart = (itemId)=>{
         setCartItems(cartItems.map((i)=>{

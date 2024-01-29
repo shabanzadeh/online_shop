@@ -17,7 +17,7 @@ create a shopping cart for the customer
 ![](img/online_shop.png)
 
 
-##stack management
+## stack management
 
 1. Open a command prompt at the root of the application's folder.
 

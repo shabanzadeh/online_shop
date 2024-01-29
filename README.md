@@ -8,7 +8,7 @@ create a shopping cart for the customer
 
 `customer can choose  your product `
 
-`puut in shopping cart`
+`create shopping cart`
 
 `deploy`
 ### creathing Online Shopping in Reacht.js

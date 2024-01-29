@@ -1,6 +1,11 @@
 const Card =()=>{
     return(
-        <h1>Card</h1>
+        <React.Fragment>
+        <h1>Your Cart items</h1>
+        <div className="row">
+
+        </div>
+        </React.Fragment>
     )
 
 }

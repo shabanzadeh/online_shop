@@ -16,6 +16,8 @@ create a shopping cart for the customer
 # Getting started
 ![](img/online_shop.png)
 
+![](img/cart.png)
+
 
 ## stack management
 
